@@ -120,8 +120,3 @@ pytest services/stats-service/ -v --cov=services/stats-service --cov-report=term
 
 โปรเจกต์นี้เผยแพร่ภายใต้ใบอนุญาต **[MIT License](./LICENSE)**
 
----
-
-## 📄 ใบอนุญาต (License)
-
-โปรเจกต์นี้เผยแพร่ภายใต้ใบอนุญาต **[MIT License](./LICENSE)**
