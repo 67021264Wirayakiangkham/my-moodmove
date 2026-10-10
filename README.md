@@ -1,3 +1,4 @@
+
 # 💰 Dashboard Personal Planning (Personal Finance Dashboard)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -17,37 +18,56 @@
 
 ---
 
-## 🏛️ การตัดสินใจทางสถาปัตยกรรม (Architecture & ADR)
-* **Modular Monolith Architecture:** พัฒนาด้วย Node.js + Express รวมส่วน Transaction, Reporting และ Recommendation Engine ไว้ใน Deployment Unit เดียวกัน เพื่อความรวดเร็วในการส่งมอบ MVP ใน 8 สัปดาห์ และจัดการ ACID Transactions ของข้อมูลการเงินได้อย่างปลอดภัย
-* **Tech Stack Rationale:**
-  * **Frontend (React):** มี Ecosystem ของ Charting Libraries (เช่น Recharts) ที่สมบูรณ์ ช่วยสร้าง Dashboard เปรียบเทียบรายจ่ายประจำเดือนให้ผู้ใช้เห็นภาพรวมได้ง่าย
-  * **Backend (Node.js + Express):** ใช้ Full-stack JavaScript ลด Context Switching ในทีมและมี Non-blocking I/O ที่เพียงพอต่อการทำ CRUD
-  * **Database (Supabase / PostgreSQL):** ใช้ Relational Database เพื่อความถูกต้องของข้อมูลการเงิน (ACID Compliance) และลดภาระการจัดการ Infrastructure
+## 🗺️ สรุปภาพรวมเส้นทางการพัฒนาตามราย Lab (Labs & Artifacts Overview)
+
+| Lab / สัปดาห์ | หัวข้อหลัก (Topic) | รายละเอียดการดำเนินงานในโปรเจกต์ (Implementation & Artifacts) |
+| :--- | :--- | :--- |
+| **Lab 01–03** | **Requirements & User Personas** | วิเคราะห์ปัญหาผู้ใช้ (เช่น "เมย์" พนักงานบริษัทอายุ 27 ปี), กำหนด User Personas และ Main User Scenarios สำหรับการบันทึกการเงินและการตั้งเป้าหมาย |
+| **Lab 04** | **System Analysis & Modeling** | ออกแบบโครงสร้างระบบ, Data Flow Diagrams และ UML Class Diagrams เพื่อรองรับระบบบริหารจัดการการเงิน |
+| **Lab 05** | **Architecture Decisions (ADR & C4)** | ตัดสินใจเลือก **Modular Monolith Architecture** (Node.js + Express + Supabase/PostgreSQL) พร้อมจัดทำ C4 Model (Context & Container Diagram) |
+| **Lab 06** | **Containerization & Docker** | สร้าง Production-Ready Dockerfile (Multi-stage build, Alpine image, Non-root `appuser`) และแยก Service สำหรับ stats-service |
+| **Lab 07–08** | **Sprint & Feature Development** | พัฒนาฟังก์ชันหลัก 4 แท็บ: Dashboard, รายรับ-รายจ่าย (Transactions), เป้าหมาย (Goals) และงบประมาณ (Budgets) |
+| **Lab 09** | **Automated Testing & TDD** | เขียน Unit Test ด้วย Vitest และ Property-Based Test ด้วย fast-check, ทำ TDD (Red-Green-Refactor) และ Saboteur Testing |
+| **Lab 10** | **DevOps & CI/CD** | ตั้งค่า GitHub Actions Workflow ให้รัน `npm ci` และตรวจสอบ Test Coverage อัตโนมัติทุกครั้งที่มีการ Push และ PR |
+| **Lab 11** | **Security & Defensive Programming** | ทำ Input Validation ทั้งฝั่ง Client และ Server (Pragmatic Paranoia) ป้องกันข้อมูลผิดพลาดและรักษาความปลอดภัยข้อมูลผู้ใช้ |
+| **Lab 12** | **Refactoring & Technical Debt** | จัดการ Code Smell, ปรับปรุงสถาปัตยกรรมโค้ด และดูแลความสะอาดของ Source Code ให้มีคุณภาพสูง |
+| **Lab 12B** | **Safety Net Sprint** | เพิ่มความมั่นใจด้วยชุดทดสอบครอบคลุม 21 รายการ (จาก 3 test files) ได้ผล Test Coverage **100% (Statements, Branches, Functions, Lines)** |
+| **Lab 13–14** | **Working Software & Demo Readiness** | เตรียม Demo Data, ทดสอบระบบ End-to-End และวางแผนสำรองการนำเสนอ (Demo Backup Plan) |
+| **Lab 15** | **Professional Ethics & Reflection** | ประยุกต์ใช้ PDPA (Data Minimization), เลือกใช้ MIT License, เปิดเผย AI Usage และจัดทำ Final Reflection |
 
 ---
 
-## 🐳 DevOps & Containerization Strategy
-* **Production-Ready Dockerfile:** ใช้ `python:3.12-alpine` (หรือ Node image ตามบริการ) ควบคุมขนาด Image ให้เล็ก ใช้ Multi-stage build แยก dependency builder ออกจาก runtime และรันผ่าน Non-root user (`appuser`) เพื่อความปลอดภัย (ESP §7)
-* **Service Decomposition:** แยกส่วนประมวลผลสถิติเป็น `stats-service` (Microservices pattern) ให้ทีมสามารถพัฒนาและ Deploy แยกอิสระได้
+## 🧪 การทดสอบระบบและการรันโปรเจกต์ (Commands)
 
----
-
-## 🧪 การทดสอบระบบ (Lab 9 & Lab 12B Safety Net)
-ระบบผ่านการทดสอบอย่างเข้มข้นด้วย **Vitest** และ **fast-check** (Property-Based Testing) พร้อมเกณฑ์ Test Coverage สูงถึง **100%**
-* **Unit Testing & TDD:** ทดสอบฟังก์ชัน Core Business Logic เช่น `calculateAndFormatStats` ผ่าน Equivalnce Partitioning และ Boundary Value Analysis
-* **Property-Based Testing:** ใช้ `fast-check` ตรวจสอบ Invariant ของระบบ และป้องกันข้อผิดพลาดจากการปัดเศษ (Rounding errors)
-* **Safety Net (Lab 12B):** ชุดทดสอบ 21 รายการครอบคลุม Edge Cases และ Regression tests ที่ช่วยสร้างความมั่นใจในการ refactor โค้ด
-
-### คำสั่งในการติดตั้งและรันเทส:
 ```bash
-# ติดตั้ง dependencies
+# 1. ติดตั้ง dependencies
 npm install
 
-# ติดตั้งแบบ CI-style
+# 2. ติดตั้งแบบ CI-style
 npm ci
 
-# รัน unit tests
+# 3. รัน Unit & Integration Tests
 npm test
 
-# ตรวจสอบ Test Coverage (เกณฑ์ Statement/Branch >= 90%)
+# 4. ตรวจสอบ Test Coverage (เกณฑ์ผ่าน 100%)
 npm run test:coverage
+
+# 5. เปิดรันระบบในโหมด Development
+npm run dev
+
+```
+
+---
+
+## 🛡️ จรรยาบรรณ ความเป็นส่วนตัว และ AI (Ethics, PDPA & AI Disclosure)
+
+* **Data Minimization (PDPA 2562):** เก็บเฉพาะข้อมูลตัวเลขธุรกรรมทางการเงินที่จำเป็นต่อการประมวลผล ไม่เก็บข้อมูลส่วนบุคคลเกินความจำเป็น
+* **AI Disclosure:** บันทึกประวัติและเปิดเผยการใช้ AI ช่วยพัฒนาซอฟต์แวร์อย่างโปร่งใสใน `/docs/AI_USAGE.md`
+
+## 📄 ใบอนุญาต (License)
+
+โปรเจกต์นี้เผยแพร่ภายใต้ใบอนุญาต **[MIT License](https://www.google.com/search?q=LICENSE)**
+
+```
+
+```
