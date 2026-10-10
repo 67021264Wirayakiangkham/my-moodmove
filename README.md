@@ -28,14 +28,18 @@ npm run dev
 ```
 
 ---
-
 ## 📐 สถาปัตยกรรมระบบ (System Architecture - C4 Models)
 
-สถาปัตยกรรมของระบบได้รับการออกแบบตามมาตรฐาน C4 Model (ดูรายละเอียดเพิ่มเติมได้ที่โฟลเดอร์ [`/docs/architecture`](https://www.google.com/search?q=./docs/architecture))
+รายละเอียดการออกแบบและตัดสินใจทางสถาปัตยกรรมของระบบ (ดูเอกสารฉบับเต็มได้ที่โฟลเดอร์ [`/docs/architecture`](./docs/architecture))
 
-### 1. C4 Context Diagram
+### 1. C4 Model: System Context (Level 1)
+![System Context Diagram](./docs/architecture/diagrams/c4-level-1-context.png)
 
-### 2. C4 Container Diagram
+### 2. C4 Model: Container (Level 2)
+![Container Diagram](./docs/architecture/diagrams/c4-level-2-container.png)
+
+### Architectural Decision Records (ADRs)
+- [ADR-001: Selection of Core Technology Stack](./docs/architecture/adr/0001-tech-stack-selection.md)
 
 ---
 
