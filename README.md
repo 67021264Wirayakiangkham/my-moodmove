@@ -61,15 +61,15 @@ npm run dev
 
 ### 1. C4 Model: System Context (Level 1)
 
-> ดูแผนภาพได้ที่โฟลเดอร์ [`/docs/architecture/diagrams`](./docs/architecture/diagrams)
+> ดูแผนภาพได้ที่โฟลเดอร์ [`/docs/architecture/diagrams`](./diagrams/c4-level-1-context.png)
 
 ### 2. C4 Model: Container Diagram (Level 2)
 
-> ดูแผนภาพได้ที่โฟลเดอร์ [`/docs/architecture/diagrams`](./docs/architecture/diagrams)
+> ดูแผนภาพได้ที่โฟลเดอร์ [`/docs/architecture/diagrams`](./diagrams/c4-level-2-container.png)
 
 ### 📑 Architectural Decision Records (ADRs)
 
-* **ADR-001:** [Selection of Core Technology Stack](./docs/architecture/adr/0001-tech-stack-selection.md)
+* **ADR-001:** [Selection of Core Technology Stack](./adr/0001-tech-stack-selection.md)
 
 ---
 
