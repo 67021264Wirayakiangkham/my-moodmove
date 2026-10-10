@@ -7,7 +7,7 @@
 
 ## 🎬 Demo
 
-![Demo ของ Personal Finance Dashboard](./docs/demo/demo.gif)
+![Demo ของ Personal Finance Dashboard](ex.ภาพdemo)
 
 ---
 
