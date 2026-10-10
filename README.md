@@ -1,6 +1,4 @@
-คัดลอกโค้ดด้านล่างนี้ (กดปุ่ม **Copy code** ที่มุมขวาบนของกล่องโค้ด) แล้วนำไปวางในไฟล์ `README.md` ได้เลยครับ:
 
-```markdown
 # 💰 Dashboard Personal Planning (Personal Finance Dashboard)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
