@@ -10,7 +10,6 @@
 ---
 
 ## 👥 ทีมผู้พัฒนา (Team Members - `se-sec1-team-07`)
-
 * **ขวัญชีวา คำแดง** — GitHub: [@67024728](https://github.com/67024728)
 * **รัตน์ติญาภรณ์ แหลมจัด** — GitHub: [@BEAMMMMMMMMM1234](https://github.com/BEAMMMMMMMMM1234)
 * **พณิชพล สุวรรณหล้า** — GitHub: [@Mokub112](https://github.com/Mokub112)
@@ -18,52 +17,62 @@
 
 ---
 
-## 🗺️ สรุปภาพรวมเส้นทางการพัฒนาตามราย Lab (Labs & Artifacts Overview)
-
-| Lab / สัปดาห์ | หัวข้อหลัก (Topic) | รายละเอียดการดำเนินงานในโปรเจกต์ (Implementation & Artifacts) |
-| :--- | :--- | :--- |
-| **Lab 01–03** | **Requirements & User Personas** | วิเคราะห์ปัญหาผู้ใช้ (เช่น "เมย์" พนักงานบริษัทอายุ 27 ปี), กำหนด User Personas และ Main User Scenarios สำหรับการบันทึกการเงินและการตั้งเป้าหมาย |
-| **Lab 04** | **System Analysis & Modeling** | ออกแบบโครงสร้างระบบ, Data Flow Diagrams และ UML Class Diagrams เพื่อรองรับระบบบริหารจัดการการเงิน |
-| **Lab 05** | **Architecture Decisions (ADR & C4)** | ตัดสินใจเลือก **Modular Monolith Architecture** (Node.js + Express + Supabase/PostgreSQL) พร้อมจัดทำ C4 Model (Context & Container Diagram) |
-| **Lab 06** | **Containerization & Docker** | สร้าง Production-Ready Dockerfile (Multi-stage build, Alpine image, Non-root `appuser`) และแยก Service สำหรับ stats-service |
-| **Lab 07–08** | **Sprint & Feature Development** | พัฒนาฟังก์ชันหลัก 4 แท็บ: Dashboard, รายรับ-รายจ่าย (Transactions), เป้าหมาย (Goals) และงบประมาณ (Budgets) |
-| **Lab 09** | **Automated Testing & TDD** | เขียน Unit Test ด้วย Vitest และ Property-Based Test ด้วย fast-check, ทำ TDD (Red-Green-Refactor) และ Saboteur Testing |
-| **Lab 10** | **DevOps & CI/CD** | ตั้งค่า GitHub Actions Workflow ให้รัน `npm ci` และตรวจสอบ Test Coverage อัตโนมัติทุกครั้งที่มีการ Push และ PR |
-| **Lab 11** | **Security & Defensive Programming** | ทำ Input Validation ทั้งฝั่ง Client และ Server (Pragmatic Paranoia) ป้องกันข้อมูลผิดพลาดและรักษาความปลอดภัยข้อมูลผู้ใช้ |
-| **Lab 12** | **Refactoring & Technical Debt** | จัดการ Code Smell, ปรับปรุงสถาปัตยกรรมโค้ด และดูแลความสะอาดของ Source Code ให้มีคุณภาพสูง |
-| **Lab 12B** | **Safety Net Sprint** | เพิ่มความมั่นใจด้วยชุดทดสอบครอบคลุม 21 รายการ (จาก 3 test files) ได้ผล Test Coverage **100% (Statements, Branches, Functions, Lines)** |
-| **Lab 13–14** | **Working Software & Demo Readiness** | เตรียม Demo Data, ทดสอบระบบ End-to-End และวางแผนสำรองการนำเสนอ (Demo Backup Plan) |
-| **Lab 15** | **Professional Ethics & Reflection** | ประยุกต์ใช้ PDPA (Data Minimization), เลือกใช้ MIT License, เปิดเผย AI Usage และจัดทำ Final Reflection |
-
----
-
-## 🧪 การทดสอบระบบและการรันโปรเจกต์ (Commands)
-
+## 🚀 วิธีการติดตั้งและรันโปรเจกต์ใน 5 บรรทัด (Quick Setup)
 ```bash
-# 1. ติดตั้ง dependencies
+git clone [https://github.com/se-sec1-team-07/personal-finance-dashboard.git](https://github.com/se-sec1-team-07/personal-finance-dashboard.git)
+cd personal-finance-dashboard
 npm install
-
-# 2. ติดตั้งแบบ CI-style
 npm ci
-
-# 3. รัน Unit & Integration Tests
-npm test
-
-# 4. ตรวจสอบ Test Coverage (เกณฑ์ผ่าน 100%)
-npm run test:coverage
-
-# 5. เปิดรันระบบในโหมด Development
 npm run dev
 
 ```
 
 ---
 
-## 🛡️ จรรยาบรรณ ความเป็นส่วนตัว และ AI (Ethics, PDPA & AI Disclosure)
+## 📐 สถาปัตยกรรมระบบ (System Architecture - C4 Models)
 
-* **Data Minimization (PDPA 2562):** เก็บเฉพาะข้อมูลตัวเลขธุรกรรมทางการเงินที่จำเป็นต่อการประมวลผล ไม่เก็บข้อมูลส่วนบุคคลเกินความจำเป็น
-* **AI Disclosure:** บันทึกประวัติและเปิดเผยการใช้ AI ช่วยพัฒนาซอฟต์แวร์อย่างโปร่งใสใน `/docs/AI_USAGE.md`
+สถาปัตยกรรมของระบบได้รับการออกแบบตามมาตรฐาน C4 Model (ดูรายละเอียดเพิ่มเติมได้ที่โฟลเดอร์ [`/docs/architecture`](https://www.google.com/search?q=./docs/architecture))
+
+### 1. C4 Context Diagram
+
+### 2. C4 Container Diagram
+
+---
+
+## 🗺️ สรุปภาพรวมเส้นทางการพัฒนาตามราย Lab (Labs & Artifacts)
+
+| Lab / สัปดาห์ | หัวข้อหลัก (Topic) | รายละเอียดการดำเนินงานในโปรเจกต์ |
+| --- | --- | --- |
+| **Lab 01–03** | Requirements & Personas | วิเคราะห์ผู้ใช้ (เช่น "เมย์" อายุ 27 ปี), กำหนด User Personas และ Main User Scenarios |
+| **Lab 04–06** | System Design & Docker | ออกแบบ C4 Model, จัดทำ ADR-001 และสร้าง Production-Ready Dockerfile |
+| **Lab 07–08** | Sprint & Feature MVP | พัฒนา 4 แท็บหลัก: Dashboard, Transactions, Goals และ Budgets |
+| **Lab 09 & 12B** | Automated Testing & Safety Net | เขียน Unit/Property-Based Tests ด้วย Vitest & fast-check ได้ Coverage **100%** |
+| **Lab 10** | DevOps & CI/CD | ตั้งค่า GitHub Actions Workflow ตรวจสอบ Test และ Coverage อัตโนมัติ |
+| **Lab 11 & 15** | Security, PDPA & Ethics | ทำ Input Validation (Pragmatic Paranoia), ปฏิบัติตาม PDPA และเปิดเผย AI Usage |
+
+---
+
+## 🧪 การทดสอบระบบ (Testing & Quality Assurance)
+
+```bash
+# รัน Unit & Property-Based Tests
+npm test
+
+# ตรวจสอบ Test Coverage (เกณฑ์ 100%)
+npm run test:coverage
+
+```
+
+---
+
+## ℹ️ เกี่ยวกับโปรเจกต์ (About / Help)
+
+* **ทำโดย:** ทีม `se-sec1-team-07` — Software Engineering, ม.พะเยา
+* **AI Disclosure:** บันทึกประวัติการใช้ AI อย่างโปร่งใสใน `/docs/architecture/AI_USAGE.md`
+
+---
 
 ## 📄 ใบอนุญาต (License)
 
 โปรเจกต์นี้เผยแพร่ภายใต้ใบอนุญาต **[MIT License](https://www.google.com/search?q=LICENSE)**
+
