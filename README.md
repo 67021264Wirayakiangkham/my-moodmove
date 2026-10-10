@@ -48,13 +48,13 @@ npm run dev
 
 | Lab / สัปดาห์ | หัวข้อหลัก (Topic) | รายละเอียดการดำเนินงานและหลักฐานเชิงวิศวกรรม (Implementation & Artifacts Detail) | เอกสารและโค้ดที่เกี่ยวข้อง |
 | --- | --- | --- | --- |
-| **Lab 01–03** | **Requirements & User Personas** | • **Target Persona:** วิเคราะห์กลุ่มเป้าหมายผู้ใช้จริง เช่น "เมย์" (พนักงานบริษัท/นิสิต อายุ 27 ปี)<br>
+| **Lab 01–03** | **Requirements & User Personas** | • **Target Persona:** วิเคราะห์กลุ่มเป้าหมายผู้ใช้จริง เช่น "เมย์" (พนักงานบริษัท/นิสิต อายุ 27 ปี)
 
-<br>• **Problem Statement:** ขาดการวางแผนทางการเงิน ไม่ทราบสัดส่วนค่าใช้จ่ายจริง และเงินออมไม่บรรลุเป้าหมาย<br>
+• **Problem Statement:** ขาดการวางแผนทางการเงิน ไม่ทราบสัดส่วนค่าใช้จ่ายจริง และเงินออมไม่บรรลุเป้าหมาย
 
-<br>• **Artifacts:** จัดทำ User Personas, Definition of Done (DoD), Main User Scenarios และ Project Proposal | `/docs/requirements/`<br>
+• **Artifacts:** จัดทำ User Personas, Definition of Done (DoD), Main User Scenarios และ Project Proposal | `/docs/requirements/`
 
-<br>`/docs/proposal.md` |
+`/docs/proposal.md` |
 | **Lab 04** | **System Modeling & Analysis** | • **System Design:** ออกแบบ Data Flow Diagrams (DFD) และ UML Class Diagrams สำหรับจำลองโครงสร้างข้อมูล Transactions, Goals, Budgets และ Financial Reports | `/docs/architecture/uml_models.md` |
 | **Lab 05** | **Architecture Decisions (ADR & C4)** | • **ADR-001:** เลือกสถาปัตยกรรม **Modular Monolith** (Node.js + Express + Supabase/PostgreSQL) เพื่อความรวดเร็วในการส่งมอบ MVP ภายใน 8 สัปดาห์ และรองรับ ACID Transactions ข้อมูลการเงินได้อย่างถูกต้อง<br>
 
