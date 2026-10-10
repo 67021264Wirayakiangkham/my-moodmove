@@ -67,7 +67,3 @@ npm run dev
 ## 📄 ใบอนุญาต (License)
 
 โปรเจกต์นี้เผยแพร่ภายใต้ใบอนุญาต **[MIT License](https://www.google.com/search?q=LICENSE)**
-
-```
-
-```
