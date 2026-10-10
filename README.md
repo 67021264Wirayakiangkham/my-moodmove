@@ -1,10 +1,4 @@
-จากที่เรียนมาตลอด **15 สัปดาห์ (สัปดาห์ที่ 1 ถึง 15)** ในวิชา Software Engineering การนำผลงานและเนื้อหาจาก **ทุก Lab / ทุกสัปดาห์** มาสรุปไว้ใน `README.md` เป็นสิ่งที่ **ถูกต้องและควรทำอย่างยิ่ง** ครับ! เพราะจะช่วยให้ `README.md` สะท้อนกระบวนการพัฒนาซอฟต์แวร์ครบวงจรตามหลักการ **Tip 53 (Sign Your Work)**
 
-ผมได้รวบรวมเนื้อหาจาก **ทุก Lab/ทุกสัปดาห์** (ตั้งแต่ Requirements, System Design, CI/CD, Testing ไปจนถึง Ethics/PDPA) มารวบรวมให้เป็น **`README.md` ฉบับสมบูรณ์ที่สุดสำหรับส่งงานปลายภาค** ดังนี้ครับ:
-
----
-
-```markdown
 # 💰 Dashboard Personal Planning (Personal Finance Dashboard)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
