@@ -1,4 +1,4 @@
-# 💰 Dashboard Personal Planning (Personal Finance Dashboard)
+# Dashboard Personal Planning (Personal Finance Dashboard)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![CI](https://github.com/Software-Engineering-Concepts-2026/se-sec1-team-07/actions/workflows/ci.yml/badge.svg)](https://github.com/Software-Engineering-Concepts-2026/se-sec1-team-07/actions/workflows/ci.yml)
@@ -10,10 +10,10 @@
 
 ## 👥 ทีมผู้พัฒนา (Team Members - `se-sec1-team-07`)
 
-* **ขวัญชีวา คำแดง** — GitHub: [@67024728](https://github.com/67024728)
-* **รัตน์ติญาภรณ์ แหลมจัด** — GitHub: [@BEAMMMMMMMMM1234](https://github.com/BEAMMMMMMMMM1234)
-* **พณิชพล สุวรรณหล้า** — GitHub: [@Mokub112](https://github.com/Mokub112)
-* **วีรยา เกี๋ยงคำ** — GitHub: [@67021264Wirayakiangkham](https://github.com/67021264Wirayakiangkham) *(Testing, DevOps & Documentation Specialist)*
+- **ขวัญชีวา คำแดง** — GitHub: [@67024728](https://github.com/67024728)
+- **รัตน์ติญาภรณ์ แหลมจัด** — GitHub: [@BEAMMMMMMMMM1234](https://github.com/BEAMMMMMMMMM1234)
+- **พณิชพล สุวรรณหล้า** — GitHub: [@Mokub112](https://github.com/Mokub112)
+- **วีรยา เกี๋ยงคำ** — GitHub: [@67021264Wirayakiangkham](https://github.com/67021264Wirayakiangkham) *(Testing, DevOps & Documentation Specialist)*
 
 ---
 
@@ -34,11 +34,11 @@
 
 ### 🎁 จุดที่ใส่ใจประสบการณ์ผู้ใช้ (Delight Users)
 
-* **ไม่ปล่อยหน้าว่างเปล่า:** เมื่อยังไม่มีข้อมูลจะแสดง Empty State พร้อมปุ่มชวนเริ่มต้น เช่น "เพิ่มรายการ" และ "ตั้งเป้าหมายใหม่"
-* **เป้าหมายคำนวณให้เอง:** แสดงจำนวนวันที่เหลือ และแนะนำยอดที่ควรออมต่อเดือนโดยอัตโนมัติ
-* **เห็นความคืบหน้าทันที:** Progress Bar ในเป้าหมายและงบประมาณ พร้อมสีและไอคอนอีโมจิประจำหมวดหมู่
-* **ดูย้อนหลังได้:** ปุ่มเลื่อนเดือนก่อนหน้า/ถัดไป และตัวเลขเปรียบเทียบกับเดือนที่แล้ว
-* **ใช้งานได้ทันที:** มีบัญชีทดลองให้ลอง ไม่ต้องสมัครก่อน
+- **ไม่ปล่อยหน้าว่างเปล่า:** เมื่อยังไม่มีข้อมูลจะแสดง Empty State พร้อมปุ่มชวนเริ่มต้น เช่น "เพิ่มรายการ" และ "ตั้งเป้าหมายใหม่"
+- **เป้าหมายคำนวณให้เอง:** แสดงจำนวนวันที่เหลือ และแนะนำยอดที่ควรออมต่อเดือนโดยอัตโนมัติ
+- **เห็นความคืบหน้าทันที:** Progress Bar ในเป้าหมายและงบประมาณ พร้อมสีและไอคอนอีโมจิประจำหมวดหมู่
+- **ดูย้อนหลังได้:** ปุ่มเลื่อนเดือนก่อนหน้า/ถัดไป และตัวเลขเปรียบเทียบกับเดือนที่แล้ว
+- **ใช้งานได้ทันที:** มีบัญชีทดลองให้ลอง ไม่ต้องสมัครก่อน
 
 ---
 
@@ -54,7 +54,7 @@ cd se-sec1-team-07
 
 เปิดไฟล์ [`frontend/index.html`](./frontend/index.html) ในเบราว์เซอร์ได้เลย ไม่ต้องมี server
 
-* บัญชีทดลอง: `demo@dpp.com` / `demo1234`
+- บัญชีทดลอง: [เมล/ชื่อบัญชีทดลอง]/ [รหัสผ่านบัญชีทดลอง]
 
 ### รันชุดทดสอบ JavaScript (Vitest + fast-check)
 
@@ -111,7 +111,7 @@ docker run -d -p 3000:3000 --name stats-api lab6-stats-service
 | US-02 ดูกราฟค่าใช้จ่ายตามหมวดหมู่ | [Dashboard](./frontend/pages/dashboard.html) |
 | US-03 ติดตามเป้าหมายการออม | [เป้าหมาย](./frontend/pages/goals.html) |
 | US-06 กำหนดงบประมาณรายเดือน | [งบประมาณ](./frontend/pages/budget.html) |
-| US-04 รับการแจ้งเตือนค่าใช้จ่าย (Should) | ⏳ ยังไม่ได้พัฒนา |
+| US-04 รับการแจ้งเตือนค่าใช้จ่าย (Should) |  |
 
 ---
 
@@ -129,9 +129,9 @@ docker run -d -p 3000:3000 --name stats-api lab6-stats-service
 
 ### 📑 Architectural Decision Records (ADRs)
 
-* [ADR-001: Selection of Core Technology Stack](./docs/architecture/adr/0001-tech-stack-selection.md)
-* [ADR-001: Modular Monolith vs Microservices](./docs/architecture/adr/0001-monolith-vs-microservices.md)
-* [ADR-001: Use RESTful API for Internal Communication](./docs/architecture/adr/001-use-restful-api-internal-commu.md)
+- [`ADR-001: Selection of Core Technology Stack`](./docs/architecture/adr/0001-tech-stack-selection.md)
+- [`ADR-001: Modular Monolith vs Microservices`](./docs/architecture/adr/0001-monolith-vs-microservices.md)
+- [`ADR-001: Use RESTful API for Internal Communication`](./docs/architecture/adr/001-use-restful-api-internal-commu.md)
 
 ---
 
@@ -150,8 +150,8 @@ pytest services/stats-service/ -v --cov=services/stats-service
 
 ### สรุปผลการทดสอบ (Lab 12B Safety Net)
 
-* **จำนวนเคสทดสอบ:** 21 รายการ (จาก 3 ไฟล์ทดสอบ)
-* **Statements / Branches / Functions / Lines Coverage:** 100% ทุกด้าน
+- **จำนวนเคสทดสอบ:** 21 รายการ (จาก 3 ไฟล์ทดสอบ)
+- **Statements / Branches / Functions / Lines Coverage:** 100% ทุกด้าน
 
 รายละเอียดอ่านได้ที่ [`/docs/safety-net.md`](./docs/safety-net.md)
 
@@ -167,9 +167,9 @@ pytest services/stats-service/ -v --cov=services/stats-service
 
 ## ℹ️ เกี่ยวกับโปรเจกต์ (About & Credits)
 
-* **พัฒนาโดย:** ทีม `se-sec1-team-07` — สาขาวิชาวิศวกรรมซอฟต์แวร์ (Software Engineering), มหาวิทยาลัยพะเยา
-* **วิชา:** Software Engineering (225311)
-* ข้อมูลสมาชิกแต่ละคน: [`/team/`](./team/)
+- **พัฒนาโดย:** ทีม `se-sec1-team-07` — สาขาวิชาวิศวกรรมซอฟต์แวร์ (Software Engineering), มหาวิทยาลัยพะเยา
+- **วิชา:** Software Engineering (225311)
+- ข้อมูลสมาชิกแต่ละคน: [`/team/`](./team/)
 
 ---
 
